@@ -1,0 +1,243 @@
+/* 1. CSS RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+
+
+/* 2. Typography */
+
+a {
+    text-decoration: none;
+    color: #000;    
+}
+
+p {
+    line-height: 1.5em;    
+}
+
+h1 {
+    font-family: 'Passion One', sans-serif;
+    font-weight: 100;
+    color: #000;
+    font-size: 5.063em;
+    margin: 0.75em auto 0.25em auto;    
+    text-align: center;
+}
+
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: regular;
+    text-align: center;
+    color: #FFF;
+    font-size: 2.25em;    
+    margin: 2.25em auto 1em auto;    
+    width: 30%;
+    padding: 0.25em;    
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-style: regular;
+    margin: 1em auto 0.5em auto;
+    font-size: 1.75em;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-style: regular;
+    font-size: 1.75em;
+    display: inline-block;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-style: regular;    
+    margin: auto;
+    color: #000;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    line-height: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+li span {
+    font-weight: 800;
+}
+
+
+/* 3. GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    width: 70%;
+    max-width: 850px;
+    margin: auto;
+    grid-gap: 1em 2.25em;
+}
+
+.grid-item {
+}
+
+.item-1 {
+    grid-column: 1;
+}
+
+.item-2 {
+    grid-column: 2;
+}
+
+.item-span {
+    grid-column: 1/span 2;
+}
+
+
+/* COLOURS */
+
+.iron-color h2 {
+    background-color: #CD424A;
+}
+
+.iron-color h3 {
+    color: #CD424A;
+}
+
+.calcium-color h2 {
+    background-color: #48CEE3;
+}
+
+.calcium-color h3 {
+    color: #48CEE3;
+}
+
+.potassium-color h2 {
+    background-color: #FFC558;
+}
+
+.potassium-color h3 {
+    color: #FFC558;
+}
+
+.sodium-color h2 {
+    background-color: #636972;
+}
+
+.sodium-color h3 {
+    color: #636972;
+}
+
+.magnesium-color h2 {
+    background-color: #42CD85;
+}
+
+.magnesium-color h3 {
+    color: #42CD85;
+}
+
+
+
+
+
+
+
+/* MENU 
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: repeat(5, 20%);
+    width: 70%;
+    margin: auto;
+    grid-gap: 1em;
+}
+
+.menu-icon {
+    grid-column: 1;
+    width: 5em;
+}
+
+.menu-item {
+    grid-column: 2;
+    align-self: center;    
+}
+
+*/
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: repeat(5, 20%);
+    margin: auto;
+}
+
+.menu-icon {
+    width: 5em;
+}
+
+.menu-item {
+    grid-column: 2;
+}
+
+.menu-item a {
+    display: flex;  
+    align-items: center; 
+    justify-content: space-between;   
+}
+
+.menu-item a>*{
+
+}
+
+.end {
+}
+
+.line {
+    width: 70%;
+    height: 1;
+    stroke: #000;
+    stroke-dasharray: 10;
+}
+
+.menu-item p {
+    display: inline-block;
+}
+
+.menu-item a {
+    padding: 0em 1em;
+}
+
+.menu-item a:hover {
+    cursor: pointer;
+}
+
+#iron a:hover {
+    background-color: #FBCECF;
+}
+
+#calcium a:hover {
+    background-color: #CEEFFB;
+}
+
+#potassium a:hover {
+    background-color: #FBEACE;
+}
+
+#sodium a:hover {
+    background-color: #D5D5D5;
+}
+
+#magnesium a:hover {
+    background-color: #DDFBCE;
+}
