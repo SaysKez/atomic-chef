@@ -76,6 +76,22 @@ li span {
 }
 
 
+/* GENERAL STYLING */
+
+.button {
+    padding: 1.25em;
+    background-color: #42CD85;
+    cursor: pointer;
+    display: block;
+    width: 10em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+
+
+
+
 /* 3. GRID */
 
 .grid {
