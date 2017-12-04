@@ -32,7 +32,7 @@ h1 {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-style: regular;
+    font-weight: 400;
     text-align: center;
     color: #FFF;
     font-size: 2.25em;    
@@ -43,7 +43,7 @@ h2 {
 
 h3 {
     font-family: 'Oswald', sans-serif;
-    font-style: regular;
+    font-weight: 400;
     margin: 1em auto 0.5em auto;
     font-size: 1.75em;
 }
@@ -74,6 +74,12 @@ li {
 li span {
     font-weight: 800;
 }
+
+.intro {
+    text-align: center;
+    font-style: italic;
+}
+
 
 
 /* GENERAL STYLING */
@@ -124,43 +130,92 @@ li span {
 .iron-color h2 {
     background-color: #CD424A;
 }
-
 .iron-color h3 {
     color: #CD424A;
+}
+.iron-color .cell-background, .iron-color .chemical-symbol {
+    fill: #cd424a;
 }
 
 .calcium-color h2 {
     background-color: #48CEE3;
 }
-
 .calcium-color h3 {
     color: #48CEE3;
+}
+.calcium-color .cell-background, .calcium-color .chemical-symbol {
+    fill: #48CEE3;
 }
 
 .potassium-color h2 {
     background-color: #FFC558;
 }
-
 .potassium-color h3 {
     color: #FFC558;
+}
+.potassium-color .cell-background, .potassium-color .chemical-symbol {
+    fill: #FFC558;
 }
 
 .sodium-color h2 {
     background-color: #636972;
 }
-
 .sodium-color h3 {
     color: #636972;
+}
+.sodium-color .cell-background, .sodium-color .chemical-symbol {
+    fill: #636972;
 }
 
 .magnesium-color h2 {
     background-color: #42CD85;
 }
-
 .magnesium-color h3 {
     color: #42CD85;
 }
+.magnesium-color .cell-background, .magnesium-color .chemical-symbol {
+    fill: #42CD85;
+}
 
+
+
+/* ILLUSTRATIONS */
+.image-header {
+    background-color: #FBCECF;
+}
+
+.image-header svg {
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding: 4em 0em 5em 0em;
+}
+
+.grid h2:first-of-type {
+    margin-top: -0.75em;
+}
+
+.cell {
+    width: 70%;
+    display: block;
+    margin: 4em auto;
+} 
+    
+.first-letter {
+    font-size:10.75em;
+    font-family:PassionOne-Regular, Passion One;
+}
+    
+.second-letter {
+    font-size:65%;
+    letter-spacing:0em;
+}
+    
+.subtext {
+    fill: #000;
+    font-size:2.25em;
+    font-family:Merriweather-Light, Merriweather;
+} 
 
 
 
