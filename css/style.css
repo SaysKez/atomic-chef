@@ -13,7 +13,7 @@
 
 a {
     text-decoration: none;
-    color: #000;    
+    color: #212121;    
 }
 
 p {
@@ -23,7 +23,7 @@ p {
 h1 {
     font-family: 'Passion One', sans-serif;
     font-weight: 100;
-    color: #000;
+    color: #212121;
     font-size: 5.063em;
     margin: 0.75em auto 0.25em auto;    
     text-align: center;
@@ -59,7 +59,7 @@ body {
     font-family: 'Merriweather', serif;
     font-style: regular;    
     margin: auto;
-    color: #000;
+    color: #212121;
 }
 
 ul {
@@ -133,7 +133,7 @@ li span {
 .iron-color h3 {
     color: #CD424A;
 }
-.iron-color .cell-background, .iron-color .chemical-symbol {
+.iron-color {
     fill: #cd424a;
 }
 
@@ -143,7 +143,7 @@ li span {
 .calcium-color h3 {
     color: #48CEE3;
 }
-.calcium-color .cell-background, .calcium-color .chemical-symbol {
+.calcium-color {
     fill: #48CEE3;
 }
 
@@ -153,7 +153,7 @@ li span {
 .potassium-color h3 {
     color: #FFC558;
 }
-.potassium-color .cell-background, .potassium-color .chemical-symbol {
+.potassium-color {
     fill: #FFC558;
 }
 
@@ -163,7 +163,7 @@ li span {
 .sodium-color h3 {
     color: #636972;
 }
-.sodium-color .cell-background, .sodium-color .chemical-symbol {
+.sodium-color {
     fill: #636972;
 }
 
@@ -173,7 +173,7 @@ li span {
 .magnesium-color h3 {
     color: #42CD85;
 }
-.magnesium-color .cell-background, .magnesium-color .chemical-symbol {
+.magnesium-color {
     fill: #42CD85;
 }
 
@@ -212,10 +212,14 @@ li span {
 }
     
 .subtext {
-    fill: #000;
+    fill: #212121;
     font-size:2.25em;
     font-family:Merriweather-Light, Merriweather;
 } 
+
+.def-highlight {
+    color: red;
+}
 
 
 
@@ -277,7 +281,7 @@ li span {
 .line {
     width: 70%;
     height: 1;
-    stroke: #000;
+    stroke: #212121;
     stroke-dasharray: 10;
 }
 

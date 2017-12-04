@@ -26,19 +26,19 @@
             </div>
 
             <div class="grid-item item-span">
-                <svg class="cell iron-color" viewBox="0 0 526 280.02">
+                <svg class="cell" viewBox="0 0 526 280.02">
                     <defs/>
                     <title>Iron</title>
-                    <rect class="cell-background" x="128.81" y="6.37" width="277.46" height="273.64"/>
-                    <rect fill="#FFF" x="127.24" width="273.64" height="273.64"/>
-                    <text class="chemical-symbol first-letter" transform="translate(203.72 189.27)">F<tspan class="second-letter" x="66.31" y="0">e</tspan></text>
+                    <rect class="iron-color" x="128.81" y="6.37" width="277.46" height="273.64"/>
+                    <rect onMouseEnter="highlightDef('element-name-def');" onMouseLeave="highlightDef('element-name-def');" fill="#FFF" x="127.24" width="273.64" height="273.64"/>
+                    <text class="iron-color first-letter chemical-symbol" transform="translate(203.72 189.27)">F<tspan class="second-letter" x="66.31" y="0">e</tspan></text>
                     <g class="subtext">
-                        <text transform="translate(230.29 235.73)">Iron</text>
-                        <text transform="translate(140.06 42.22)">26</text>
+                        <text class="element-name" transform="translate(230.29 235.73)">Iron</text>
+                        <text class="atomic-number" transform="translate(140.06 42.22)">26</text>
                     </g>
-                    <g class="cutlery">
-                        <path fill="#000" d="M506,130h8V240a6.5,6.5,0,0,0,12,0V12c-3.14-.72-9.7,15.78-13,26C508.71,51.28,504.2,102.68,506,130Z"/><path d="M12,70V247a6.5,6.5,0,0,0,12,0V70Z"/>
-                        <path fill="#000" d="M35.47,37.22a3.91,3.91,0,0,0-7,0v31a4.74,4.74,0,0,1-3.48,1.35,8.42,8.42,0,0,1-3.68-1.28v-31a3.91,3.91,0,0,0-7,0V68.4a7.65,7.65,0,0,1-4,1.14A4.7,4.7,0,0,1,7,68.22v-31A3.83,3.83,0,0,0,3.49,35,3.83,3.83,0,0,0,0,37.22V98.47A27.72,27.72,0,0,0,17.7,105a27.72,27.72,0,0,0,17.73-6.53V73.27h0Z"/>
+                    <g class="cutlery" fill="#212121">
+                        <path d="M506,130h8V240a6.5,6.5,0,0,0,12,0V12c-3.14-.72-9.7,15.78-13,26C508.71,51.28,504.2,102.68,506,130Z"/><path d="M12,70V247a6.5,6.5,0,0,0,12,0V70Z"/>
+                        <path d="M35.47,37.22a3.91,3.91,0,0,0-7,0v31a4.74,4.74,0,0,1-3.48,1.35,8.42,8.42,0,0,1-3.68-1.28v-31a3.91,3.91,0,0,0-7,0V68.4a7.65,7.65,0,0,1-4,1.14A4.7,4.7,0,0,1,7,68.22v-31A3.83,3.83,0,0,0,3.49,35,3.83,3.83,0,0,0,0,37.22V98.47A27.72,27.72,0,0,0,17.7,105a27.72,27.72,0,0,0,17.73-6.53V73.27h0Z"/>
                     </g>
                 </svg>
            </div>
@@ -46,7 +46,7 @@
             <div class="grid-item item-1">
                 <h3>Ingredients</h3>        
                 <ul>
-                    <li><span>Element:</span> Iron</li>
+                    <li><span class="element-name-def">Element:</span> Iron</li>
                     <li><span>What:</span> A shiny, greyish metal that rusts in damp air.</li>
                     <li><span>Chemical Symbol:</span> Fe</li>
                     <li><span>Atomic Number:</span> 26</li>
@@ -56,6 +56,16 @@
                     <li><span>Period:</span> 4</li>
                 </ul>
             </div>
+
+            <script type="text/javascript">
+                function highlightDef(highlightDefClass){
+                    if (document.getElementsByClassName(highlightDefClass).className === "element-name-def"){
+                    document.getElementsByClassName(highlightDefClass).className = "element-name-def def-highlight"
+                    } else {
+                        document.getElementsByClassName(highlightDefClass).className = "element-name-def"
+                    }
+                }
+            </script>
 
             <div class="grid-item item-2">                    
                 <h3>Specials</h3>
