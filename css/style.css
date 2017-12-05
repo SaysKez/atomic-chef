@@ -50,16 +50,25 @@ h3 {
 
 h4 {
     font-family: 'Oswald', sans-serif;
-    font-style: regular;
     font-size: 1.75em;
     display: inline-block;
 }
 
 body {
     font-family: 'Merriweather', serif;
-    font-style: regular;    
     margin: auto;
     color: #212121;
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+nav li ul {
+    font-family: 'Merriweather', serif;
+    font-size: 75%;
 }
 
 ul {
@@ -121,15 +130,16 @@ ul.dropdown-content li {
     display: block;
     background-color: #FFF;
     text-align: left;
-    margin: 0em;   
-    padding: 1em;
+    margin: 0em;  
+    padding: 0.75em 1em 0.75em 1em;
     margin-left: -1em; 
 }
 
 /*
-ul.dropdown-content li:hover {
-    background-color: #FBCECF;  
-}*/
+ul.dropdown-content:first-child {
+    margin-top: 1em;     
+}
+*/
 
 .dropdown-content {
     position: absolute;
@@ -151,9 +161,6 @@ ul.dropdown-content li:hover {
     max-width: 850px;
     margin: auto;
     grid-gap: 1em 2.25em;
-}
-
-.grid-item {
 }
 
 .item-1 {
