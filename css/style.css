@@ -190,6 +190,13 @@ ul.dropdown-content:first-child {
     display: none;
 }
 
+.outline {
+    fill:none;
+    stroke-miterlimit:10;
+    stroke:#212121;
+    stroke-width:2;
+}
+
 
 
 
