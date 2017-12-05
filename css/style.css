@@ -13,7 +13,7 @@
 
 a {
     text-decoration: none;
-    color: #212121;    
+    color: #212121;  
 }
 
 p {
@@ -109,6 +109,10 @@ nav ul li {
     margin: 1em 2em;
 }
 
+nav li:hover {
+    cursor: pointer;    
+}
+
 .dropdown {
     position: relative;
 }
@@ -117,14 +121,15 @@ ul.dropdown-content li {
     display: block;
     background-color: #FFF;
     text-align: left;
-    margin: 0em;
+    margin: 0em;   
     padding: 1em;
-    margin-left: -1em;    
+    margin-left: -1em; 
 }
 
+/*
 ul.dropdown-content li:hover {
-    background-color: #FFF;  
-}
+    background-color: #FBCECF;  
+}*/
 
 .dropdown-content {
     position: absolute;
@@ -354,22 +359,22 @@ ul.dropdown-content li:hover {
     cursor: pointer;
 }
 
-.iron a:hover {
+.iron a:hover, li.iron:hover {
     background-color: #FBCECF;
 }
 
-.calcium a:hover {
+.calcium a:hover, li.calcium:hover  {
     background-color: #CEEFFB;
 }
 
-.potassium a:hover {
+.potassium a:hover, li.potassium:hover {
     background-color: #FBEACE;
 }
 
-.sodium a:hover {
+.sodium a:hover, li.sodium:hover {
     background-color: #D5D5D5;
 }
 
-.magnesium a:hover {
+.magnesium a:hover, li.magnesium:hover {
     background-color: #DDFBCE;
 }
