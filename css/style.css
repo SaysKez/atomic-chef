@@ -174,6 +174,7 @@ ul.dropdown-content:first-child {
 .full-screen {
     position: relative;
     background-color: #ffc558;
+    height: 100vh;
 }
 
 .full-screen h1 {
@@ -181,9 +182,11 @@ ul.dropdown-content:first-child {
     z-index: 2;    
 }
 
-.full-screen .button {
+.full-screen div {
     position: absolute;
-    z-index: 3;        
+    z-index: 3; 
+    width: 100%;
+    bottom: 1em;
 }
 
 .image-background {
