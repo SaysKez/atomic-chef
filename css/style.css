@@ -113,6 +113,7 @@ nav {
     width: 100%;
     background-color: #FFF;
     position: absolute;
+    top: 0;
     z-index: 100;
     -webkit-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
@@ -137,9 +138,9 @@ nav li:hover {
 }
 
 ul.dropdown-content {
-    -webkit-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
-    box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 4px 6px 8px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 4px 6px 8px -8px rgba(0,0,0,0.15);
+    box-shadow: 4px 6px 8px -8px rgba(0,0,0,0.15);
 }
 
 ul.dropdown-content li {
