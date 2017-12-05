@@ -156,6 +156,7 @@ ul.dropdown-content:first-child {
 
 .full-screen {
     position: relative;
+    background-color: #ffc558;
 }
 
 .full-screen h1 {
@@ -177,6 +178,16 @@ ul.dropdown-content:first-child {
 
 .pot {
     fill: #fff;
+}
+
+.logo-cloud {
+    fill: #212121;
+    display: none;
+}
+
+.banner {
+    fill: #CD424A;
+    display: none;
 }
 
 
