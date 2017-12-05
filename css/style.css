@@ -152,6 +152,36 @@ ul.dropdown-content:first-child {
 
 
 
+/* LANDING PAGE */
+
+.full-screen {
+    position: relative;
+}
+
+.full-screen h1 {
+    position: absolute;
+    z-index: 2;    
+}
+
+.full-screen .button {
+    position: absolute;
+    z-index: 3;        
+}
+
+.image-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.pot {
+    fill: #fff;
+}
+
+
+
+
 /* 3. GRID */
 
 .grid {
