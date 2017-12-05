@@ -17,7 +17,7 @@ a {
 }
 
 p {
-    line-height: 1.5em;    
+    line-height: 1.65em;    
 }
 
 h1 {
@@ -95,6 +95,45 @@ li span {
 }
 
 
+
+
+
+/* NAV */
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 1em 2em;
+}
+
+.dropdown {
+    position: relative;
+}
+
+ul.dropdown-content li {
+    display: block;
+    background-color: #FFF;
+    text-align: left;
+    margin: 0em;
+    padding: 1em;
+    margin-left: -1em;    
+}
+
+ul.dropdown-content li:hover {
+    background-color: #FFF;  
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 
@@ -315,22 +354,22 @@ li span {
     cursor: pointer;
 }
 
-#iron a:hover {
+.iron a:hover {
     background-color: #FBCECF;
 }
 
-#calcium a:hover {
+.calcium a:hover {
     background-color: #CEEFFB;
 }
 
-#potassium a:hover {
+.potassium a:hover {
     background-color: #FBEACE;
 }
 
-#sodium a:hover {
+.sodium a:hover {
     background-color: #D5D5D5;
 }
 
-#magnesium a:hover {
+.magnesium a:hover {
     background-color: #DDFBCE;
 }
