@@ -95,7 +95,9 @@ li span {
 
 .button {
     padding: 1.25em;
-    background-color: #42CD85;
+    background-color: #CD424A;
+/*  border: 4px solid #CD424A; */
+    border-radius: 2em;
     cursor: pointer;
     display: block;
     width: 10em;
@@ -108,6 +110,17 @@ li span {
 
 
 /* NAV */
+
+nav {
+    width: 100%;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    -webkit-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
+    box-shadow: 0px 6px 8px -8px rgba(0,0,0,0.15);
+}
 
 nav ul {
     text-align: center;
@@ -124,6 +137,12 @@ nav li:hover {
 
 .dropdown {
     position: relative;
+}
+
+ul.dropdown-content {
+    -webkit-box-shadow: 4px 6px 8px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 4px 6px 8px -8px rgba(0,0,0,0.15);
+    box-shadow: 4px 6px 8px -8px rgba(0,0,0,0.15);
 }
 
 ul.dropdown-content li {
@@ -149,6 +168,57 @@ ul.dropdown-content:first-child {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+
+/* LANDING PAGE */
+
+.full-screen {
+    position: relative;
+    background-color: #ffc558;
+    height: 100vh;
+}
+
+.full-screen h1 {
+    position: absolute;
+    z-index: 2;    
+}
+
+.full-screen div {
+    position: absolute;
+    z-index: 3; 
+    width: 100%;
+    bottom: 1em;
+}
+
+.image-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.pot {
+    fill: #fff;
+}
+
+.logo-cloud {
+    fill: #212121;
+    display: none;
+}
+
+.banner {
+    fill: #CD424A;
+    display: none;
+}
+
+.outline {
+    fill:none;
+    stroke-miterlimit:10;
+    stroke:#212121;
+    stroke-width:2;
+}
+
 
 
 
@@ -232,14 +302,19 @@ ul.dropdown-content:first-child {
 
 /* ILLUSTRATIONS */
 .image-header {
+    position: relative;
+    z-index: -1;
     background-color: #FBCECF;
+    -webkit-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
+    box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
 }
 
 .image-header svg {
     width: 30%;
     display: block;
     margin: auto;
-    padding: 4em 0em 5em 0em;
+    padding: 7em 0em 6em 0em;
 }
 
 .grid h2:first-of-type {
