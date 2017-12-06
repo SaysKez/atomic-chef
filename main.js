@@ -31,7 +31,10 @@ $(document).ready(function() {
     var lidBlow = new TimelineMax({paused:true});
     lidBlow.add('start',0)
     .to('.pot-lid', 0.3, {y:-550, x:-100, rotation:-10, ease:"Expo.easeOut"}, 'start')  
-    .to('.pot-lid', 0.2, {x:-300, y:-625, rotation:-13, ease:"Expo.easeOut"}, 'start+=0.1');
+    .to('.pot-lid', 0.2, {x:-300, y:-625, rotation:-13, ease:"Expo.easeOut"}, 'start+=0.1')
+    .fromTo('.logo-cloud', 0.3, {display:"block", transformOrigin:"50% 100%", scaleY:0, ease:"Back.easeOut"}, {display:"block", transformOrigin:"50% 100%", scaleY:1, ease:"Back.easeOut"}, 'start+=0.05')
+    .fromTo('.logo-banner', 0.3, {display:"block", transformOrigin:"50% 50%", scaleX:0, ease:"Back.easeOut"}, {display:"block", transformOrigin:"50% 50%", scaleX:1, ease:"Back.easeOut"}, 'start+=0.15')
+    ;
     
 
     var atomicExp = new TimelineMax();
