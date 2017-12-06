@@ -394,6 +394,12 @@ ul.dropdown-content:first-child {
     justify-content: space-between;   
 } */
 
+.menu-grid {
+    width: 70%;  
+    max-width: 850px;    
+    margin: auto;
+}
+
 .menu-icon {
     width: 5em;
 }
@@ -403,7 +409,6 @@ ul.dropdown-content:first-child {
     grid-template-columns: 10% 20% 60% 1fr;
     margin: auto;
     align-items: center;  
-    width: 70%;  
 }
 
 .menu-icon {
