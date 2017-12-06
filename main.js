@@ -18,3 +18,46 @@ $(document).ready(function() {
         );
         
     });
+
+
+    //LANDING PAGE ANIMATION
+    var potLid = new TimelineMax({repeat:2, yoyo:true, paused:true});
+    potLid.add('start', 0)
+    potLid.fromTo('.pot-lid', 0.2, {rotation:3, transformOrigin: "50% 50%"}, {rotation:-3, transformOrigin: "50% 50%"}, 'start')
+    .to('.pot-lid', 0.2, {rotation:0, y:5, transformOrigin: "50% 50%"})
+    
+    potLid.timeScale(1.25);
+
+    var lidBlow = new TimelineMax({paused:true});
+    lidBlow.add('start',0)
+    .to('.pot-lid', 0.3, {y:-550, x:-100, rotation:-10, ease:"Expo.easeOut"}, 'start')  
+    .to('.pot-lid', 0.2, {x:-300, y:-625, rotation:-13, ease:"Expo.easeOut"}, 'start+=0.1');
+    
+
+    var atomicExp = new TimelineMax();
+    atomicExp.add(potLid.play())
+    .add(lidBlow.play())
+
+    atomicExp.timeScale(1);    
+
+
+
+
+    /*
+    function getTimeline(){
+        var potLid = new TimelineMax({repeat:2, yoyo:true});
+        potLid.add('start', 0)
+        potLid.fromTo('.pot-lid', 0.2, {rotation:3, transformOrigin: "50% 50%"}, {rotation:-3, transformOrigin: "50% 50%"}, 'start')
+        .to('.pot-lid', 0.2, {rotation:0, y:5, transformOrigin: "50% 50%"})
+        
+        potLid.timeScale(1);
+
+        return potLid;
+    }
+
+    function init(){
+        atomicExp
+           .add(getTimeline(), 'scene-intro');
+     }
+     init();
+     */

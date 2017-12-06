@@ -234,7 +234,10 @@ ul.dropdown-content:first-child {
 
 .banner {
     fill: #CD424A;
-    display: none;
+}
+
+.logo-banner {
+    display: none;    
 }
 
 .outline {
