@@ -94,15 +94,40 @@ li span {
 /* GENERAL STYLING */
 
 .button {
-    padding: 1.25em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #FFF;
+    font-size: 1.25em;
+    padding: 0.75em 0.25em;
     background-color: #CD424A;
 /*  border: 4px solid #CD424A; */
     border-radius: 2em;
     cursor: pointer;
     display: block;
-    width: 10em;
+    width: 8em;
     margin: 1em auto;
     text-align: center;
+    transition: all 0.2s;
+
+    -webkit-box-shadow: 0px 9px 16px -8px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 9px 16px -8px rgba(0,0,0,0.35);
+    box-shadow: 0px 9px 16px -8px rgba(0, 0, 0, 0.35);
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translate(5);
+}
+
+.button:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.35);
+    transform: translate(0px, 4px);
+}
+
+.button:active {
 }
 
 
@@ -464,4 +489,10 @@ ul.dropdown-content:first-child {
 
 .magnesium a:hover, li.magnesium:hover {
     background-color: #DDFBCE;
+}
+
+
+/* HOVER */
+.subtext:hover {
+    cursor: help;
 }
