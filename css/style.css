@@ -229,15 +229,26 @@ ul.dropdown-content:first-child {
 
 .logo-cloud {
     fill: #212121;
+    fill:#FFF;
     display: none;
 }
 
 .banner {
     fill: #CD424A;
+    -webkit-box-shadow: 0px 9px 16px -8px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 9px 16px -8px rgba(0,0,0,0.35);
+    box-shadow: 0px 9px 16px -8px rgba(0, 0, 0, 0.35);
 }
 
 .logo-banner {
     display: none;    
+}
+
+.logo-text {
+    font-family: 'Passion One', sans-serif;
+    font-weight: 100;
+    font-size: 6em;    
+    fill:#fff;
 }
 
 .outline {
