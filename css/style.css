@@ -350,6 +350,10 @@ ul.dropdown-content:first-child {
     padding: 7em 0em 6em 0em;
 }
 
+.potassium-color .image-header svg {
+    width: 36%;
+}
+
 .grid h2:first-of-type {
     margin-top: -0.75em;
 }
