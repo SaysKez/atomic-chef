@@ -343,7 +343,6 @@ ul.dropdown-content:first-child {
 .image-header {
     position: relative;
     z-index: -1;
-    background-color: #FBCECF;
     -webkit-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
     -moz-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
     box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
@@ -454,23 +453,23 @@ ul.dropdown-content:first-child {
     cursor: pointer;
 }
 
-.iron a:hover, li.iron:hover {
+.iron a:hover, li.iron:hover, .iron-color > .image-header {
     background-color: #FBCECF;
 }
 
-.calcium a:hover, li.calcium:hover  {
+.calcium a:hover, li.calcium:hover, .calcium-color > .image-header  {
     background-color: #CEEFFB;
 }
 
-.potassium a:hover, li.potassium:hover {
+.potassium a:hover, li.potassium:hover, .potassium-color > .image-header {
     background-color: #FBEACE;
 }
 
-.sodium a:hover, li.sodium:hover {
+.sodium a:hover, li.sodium:hover, .sodium-color > .image-header {
     background-color: #D5D5D5;
 }
 
-.magnesium a:hover, li.magnesium:hover {
+.magnesium a:hover, li.magnesium:hover, .magnesium-color > .image-header {
     background-color: #DDFBCE;
 }
 
