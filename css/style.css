@@ -481,6 +481,23 @@ ul.dropdown-content:first-child {
 
 
 
+/* FOOTER */
+footer {
+    margin-top: 2.25em;
+    padding: 1.75em;
+    background-color: #CEEFFB;
+    -webkit-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
+    box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
+}
+
+.footer-logo {
+    display: block;
+    margin: auto;
+    height: 6em;
+}
+
+
 
 
 
