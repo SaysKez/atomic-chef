@@ -120,7 +120,6 @@ li span {
     cursor: pointer;
     box-shadow: none;
     transform: translate(0px, 4px);
-    background-color: #48CEE3;
 }
 
 .button:active {
@@ -283,7 +282,7 @@ ul.dropdown-content:first-child {
 
 /* COLOURS */
 
-.iron-color h2 {
+.iron-color h2, .iron-color .button:hover {
     background-color: #CD424A;
 }
 .iron-color h3 {
@@ -293,7 +292,7 @@ ul.dropdown-content:first-child {
     fill: #cd424a;
 }
 
-.calcium-color h2 {
+.calcium-color h2, .calcium-color .button:hover  {
     background-color: #48CEE3;
 }
 .calcium-color h3 {
@@ -303,7 +302,7 @@ ul.dropdown-content:first-child {
     fill: #48CEE3;
 }
 
-.potassium-color h2 {
+.potassium-color h2, .potassium-color .button:hover  {
     background-color: #FFC558;
 }
 .potassium-color h3 {
@@ -313,7 +312,7 @@ ul.dropdown-content:first-child {
     fill: #FFC558;
 }
 
-.sodium-color h2 {
+.sodium-color h2, .sodium-color .button:hover  {
     background-color: #636972;
 }
 .sodium-color h3 {
@@ -323,7 +322,7 @@ ul.dropdown-content:first-child {
     fill: #636972;
 }
 
-.magnesium-color h2 {
+.magnesium-color h2, .magnesium-color .button:hover  {
     background-color: #42CD85;
 }
 .magnesium-color h3 {
@@ -449,23 +448,23 @@ ul.dropdown-content:first-child {
     cursor: pointer;
 }
 
-.iron a:hover, li.iron:hover, .iron-color > .image-header {
+.iron a:hover, li.iron:hover, .iron-color > .image-header, .iron-color footer {
     background-color: #FBCECF;
 }
 
-.calcium a:hover, li.calcium:hover, .calcium-color > .image-header  {
+.calcium a:hover, li.calcium:hover, .calcium-color > .image-header, .calcium-color footer   {
     background-color: #CEEFFB;
 }
 
-.potassium a:hover, li.potassium:hover, .potassium-color > .image-header {
+.potassium a:hover, li.potassium:hover, .potassium-color > .image-header, .potassium-color footer  {
     background-color: #FBEACE;
 }
 
-.sodium a:hover, li.sodium:hover, .sodium-color > .image-header {
+.sodium a:hover, li.sodium:hover, .sodium-color > .image-header, .sodium-color footer  {
     background-color: #D5D5D5;
 }
 
-.magnesium a:hover, li.magnesium:hover, .magnesium-color > .image-header {
+.magnesium a:hover, li.magnesium:hover, .magnesium-color > .image-header, .magnesium-color footer  {
     background-color: #DDFBCE;
 }
 
@@ -481,7 +480,6 @@ ul.dropdown-content:first-child {
 footer {
     margin-top: 2.25em;
     padding: 1.75em;
-    background-color: #CEEFFB;
     -webkit-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
     -moz-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
     box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
