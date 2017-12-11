@@ -44,6 +44,21 @@ $(document).ready(function() {
     atomicExp.timeScale(1);    
 
 
+    //LANDING PAGE HOVER
+    var bannerHover = new TimelineMax({yoyo:true, paused:true});
+    bannerHover.to('.logo-banner', 0.1, {rotation:3, transformOrigin: "50% 50%"}, 0)
+    .to('.logo-banner', 0.1, {rotation:-3, transformOrigin: "50% 50%"})
+    .to('.logo-banner', 0.1, {rotation:0, transformOrigin: "50% 50%"})
+    
+    bannerHover.timeScale(1.25);
+
+    $(".logo-banner").hover(function(){
+        bannerHover.play();
+      },function(){
+        bannerHover.reverse();
+    })
+
+
 
 
     /*
