@@ -26,7 +26,7 @@ $(document).ready(function() {
     potLid.fromTo('.pot-lid', 0.2, {rotation:3, transformOrigin: "50% 50%"}, {rotation:-3, transformOrigin: "50% 50%"}, 'start')
     .to('.pot-lid', 0.2, {rotation:0, y:5, transformOrigin: "50% 50%"})
     
-    potLid.timeScale(1.25);
+    potLid.timeScale(2);
 
     var lidBlow = new TimelineMax({paused:true});
     lidBlow.add('start',0)
