@@ -64,6 +64,7 @@ nav {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 1.25em;
+    letter-spacing: 0.5px;    
 }
 
 nav li ul {
@@ -96,6 +97,7 @@ li span {
 .button {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    letter-spacing: 0.5px;
     color: #fff;
     font-size: 1.25em;
     padding: 0.75em 0.25em;
@@ -104,7 +106,6 @@ li span {
     border: 3px solid #48CEE3;
     */
     border-radius: 2em;
-    cursor: pointer;
     display: block;
     width: 8em;
     margin: 1em auto;
@@ -116,8 +117,12 @@ li span {
     box-shadow: 0px 9px 8px -8px rgba(0, 0, 0, 0.30),    
 }
 
+.button-large {
+    width: 12em;
+}
+
 .button:hover {
-    cursor: pointer;
+    cursor: url('../images/fork.png') 10 70, pointer;    
     box-shadow: none;
     transform: translate(0px, 4px);
 }
@@ -258,6 +263,17 @@ ul.dropdown-content:first-child {
 
 /* 3. GRID */
 
+div.card-background {
+    width: 100%;
+    border-radius: 2em;
+    background-color: #fff;
+    padding-bottom: 1em;
+    -webkit-box-shadow: 0px -9px 16px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -9px 16px -8px rgba(0,0,0,0.15);
+    box-shadow: 0px -9px 16px -8px rgba(0,0,0,0.15),
+    0px 6px 8px -8px rgba(0,0,0,0.15);
+}
+
 .grid {
     display: grid;
     grid-template-columns: 50% 50%; 
@@ -338,9 +354,6 @@ ul.dropdown-content:first-child {
 .image-header {
     position: relative;
     z-index: -1;
-    -webkit-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
-    -moz-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
-    box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
 }
 
 .image-header svg {
@@ -408,7 +421,7 @@ ul.dropdown-content:first-child {
     width: 70%;  
     max-width: 850px;
     margin: auto;
-    padding: 1.75em 1em;    
+    padding: 2.25em 1.25em;    
     margin-top: -4em;
     padding-top: 4em;
     background-color: #fff;
@@ -470,7 +483,7 @@ ul.dropdown-content:first-child {
 /* MENU HOVER */
 
 .menu-item a:hover {
-    cursor: pointer;
+    cursor: url('../images/fork.png') 10 70, pointer;    
 }
 
 .menu-item svg, .menu-item h4 {
@@ -495,23 +508,39 @@ ul.dropdown-content:first-child {
     left: -20%;
 }
 
-.iron .slide-background, li.iron:hover, .iron-color > .image-header, .iron-color footer {
+.calcium a:hover .slide-background {
+    left: -20%;
+}
+
+.potassium a:hover .slide-background {
+    left: -20%;
+}
+
+.sodium a:hover .slide-background {
+    left: -20%;
+}
+
+.magnesium a:hover .slide-background {
+    left: -20%;
+}
+
+.iron .slide-background, li.iron:hover, body.iron-color {
     background-color: #FBCECF;
 }
 
-.calcium a:hover, li.calcium:hover, .calcium-color > .image-header, .calcium-color footer   {
+.calcium .slide-background, li.calcium:hover, body.calcium-color   {
     background-color: #CEEFFB;
 }
 
-.potassium a:hover, li.potassium:hover, .potassium-color > .image-header, .potassium-color footer  {
+.potassium .slide-background, li.potassium:hover, body.potassium-color {
     background-color: #FBEACE;
 }
 
-.sodium a:hover, li.sodium:hover, .sodium-color > .image-header, .sodium-color footer  {
+.sodium .slide-background, li.sodium:hover, body.sodium-color {
     background-color: #D5D5D5;
 }
 
-.magnesium a:hover, li.magnesium:hover, .magnesium-color > .image-header, .magnesium-color footer  {
+.magnesium .slide-background, li.magnesium:hover, body.magnesium-color {
     background-color: #DDFBCE;
 }
 
@@ -525,11 +554,7 @@ ul.dropdown-content:first-child {
 
 /* FOOTER */
 footer {
-    margin-top: 2.25em;
     padding: 1.75em;
-    -webkit-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
-    -moz-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
-    box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
 }
 
 footer a {
@@ -537,7 +562,6 @@ footer a {
     margin: auto;
     width: 7em;
 }
-
 
 
 
