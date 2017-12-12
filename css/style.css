@@ -64,6 +64,7 @@ nav {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 1.25em;
+    letter-spacing: 0.5px;    
 }
 
 nav li ul {
@@ -96,6 +97,7 @@ li span {
 .button {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    letter-spacing: 0.5px;
     color: #fff;
     font-size: 1.25em;
     padding: 0.75em 0.25em;
@@ -113,6 +115,10 @@ li span {
     -webkit-box-shadow: 0px 9px 16px -8px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 9px 16px -8px rgba(0,0,0,0.35);
     box-shadow: 0px 9px 8px -8px rgba(0, 0, 0, 0.30),    
+}
+
+.button-large {
+    width: 12em;
 }
 
 .button:hover {
