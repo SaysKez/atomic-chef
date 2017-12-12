@@ -507,23 +507,39 @@ div.card-background {
     left: -20%;
 }
 
+.calcium a:hover .slide-background {
+    left: -20%;
+}
+
+.potassium a:hover .slide-background {
+    left: -20%;
+}
+
+.sodium a:hover .slide-background {
+    left: -20%;
+}
+
+.magnesium a:hover .slide-background {
+    left: -20%;
+}
+
 .iron .slide-background, li.iron:hover, body.iron-color {
     background-color: #FBCECF;
 }
 
-.calcium a:hover, li.calcium:hover, body.calcium-color   {
+.calcium .slide-background, li.calcium:hover, body.calcium-color   {
     background-color: #CEEFFB;
 }
 
-.potassium a:hover, li.potassium:hover, body.potassium-color {
+.potassium .slide-background, li.potassium:hover, body.potassium-color {
     background-color: #FBEACE;
 }
 
-.sodium a:hover, li.sodium:hover, body.sodium-color {
+.sodium .slide-background, li.sodium:hover, body.sodium-color {
     background-color: #D5D5D5;
 }
 
-.magnesium a:hover, li.magnesium:hover, body.magnesium-color {
+.magnesium .slide-background, li.magnesium:hover, body.magnesium-color {
     background-color: #DDFBCE;
 }
 
