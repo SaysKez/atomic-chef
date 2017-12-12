@@ -104,7 +104,6 @@ li span {
     border: 3px solid #48CEE3;
     */
     border-radius: 2em;
-    cursor: pointer;
     display: block;
     width: 8em;
     margin: 1em auto;
@@ -117,7 +116,7 @@ li span {
 }
 
 .button:hover {
-    cursor: pointer;
+    cursor: url('../images/fork.png') 10 70, pointer;    
     box-shadow: none;
     transform: translate(0px, 4px);
 }
@@ -257,10 +256,6 @@ ul.dropdown-content:first-child {
 
 
 /* 3. GRID */
-
- {
-    background-color: #FBCECF;
-}
 
 div.card-background {
     width: 100%;
@@ -420,7 +415,7 @@ div.card-background {
     width: 70%;  
     max-width: 850px;
     margin: auto;
-    padding: 1.75em 1em;    
+    padding: 2.25em 1.25em;    
     margin-top: -4em;
     padding-top: 4em;
     background-color: #fff;
@@ -482,7 +477,7 @@ div.card-background {
 /* MENU HOVER */
 
 .menu-item a:hover {
-    cursor: pointer;
+    cursor: url('../images/fork.png') 10 70, pointer;    
 }
 
 .menu-item svg, .menu-item h4 {
@@ -561,7 +556,6 @@ footer a {
     margin: auto;
     width: 7em;
 }
-
 
 
 
