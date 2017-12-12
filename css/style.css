@@ -258,6 +258,21 @@ ul.dropdown-content:first-child {
 
 /* 3. GRID */
 
+body.iron-color {
+    background-color: #FBCECF;
+}
+
+div.card-background {
+    width: 100%;
+    border-radius: 2em;
+    background-color: #fff;
+    padding-bottom: 1em;
+    -webkit-box-shadow: 0px -9px 16px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -9px 16px -8px rgba(0,0,0,0.15);
+    box-shadow: 0px -9px 16px -8px rgba(0,0,0,0.15),
+    0px 6px 8px -8px rgba(0,0,0,0.15);
+}
+
 .grid {
     display: grid;
     grid-template-columns: 50% 50%; 
@@ -338,9 +353,6 @@ ul.dropdown-content:first-child {
 .image-header {
     position: relative;
     z-index: -1;
-    -webkit-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
-    -moz-box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
-    box-shadow: inset 0px -9px 16px -8px rgba(0,0,0,0.15);
 }
 
 .image-header svg {
@@ -495,7 +507,7 @@ ul.dropdown-content:first-child {
     left: -20%;
 }
 
-.iron .slide-background, li.iron:hover, .iron-color > .image-header, .iron-color footer {
+.iron .slide-background, li.iron:hover {
     background-color: #FBCECF;
 }
 
@@ -525,11 +537,7 @@ ul.dropdown-content:first-child {
 
 /* FOOTER */
 footer {
-    margin-top: 2.25em;
     padding: 1.75em;
-    -webkit-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
-    -moz-box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
-    box-shadow: inset 0px 6px 8px -8px rgba(0,0,0,0.15);
 }
 
 footer a {
