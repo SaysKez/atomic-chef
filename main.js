@@ -7,17 +7,37 @@ $(document).ready(function() {
     $('.javascript').animate( { height: '90px' }, 1500);
         */
         
-        $( '.subtext' ).hover(
+        $( '.chemical-symbol' ).hover(
             function() {
-               $('.highlight').css("background","#CD424A");
-               $('.highlight').css("color", "#FFF");
+               $('.symbol-def').css("background","#CD424A");
+               $('.symbol-def').css("color", "#FFF");
             }, function() {
-               $('.highlight').css("background","#FFF");
-               $('.highlight').css("color", "#212121");
+               $('.symbol-def').css("background","#FFF");
+               $('.symbol-def').css("color", "#212121");
             }
         );
-        
-    });
+
+    $( '.element-name' ).hover(
+        function() {
+           $('.element-name-def').css("background","#CD424A");
+           $('.element-name-def').css("color", "#FFF");
+        }, function() {
+           $('.element-name-def').css("background","#FFF");
+           $('.element-name-def').css("color", "#212121");
+        }
+    );
+
+    $( '.atomic-number' ).hover(
+        function() {
+           $('.atomic-number-def').css("background","#CD424A");
+           $('.atomic-number-def').css("color", "#FFF");
+        }, function() {
+           $('.atomic-number-def').css("background","#FFF");
+           $('.atomic-number-def').css("color", "#212121");
+        }
+    );
+
+});
 
 
     //LANDING PAGE ANIMATION
