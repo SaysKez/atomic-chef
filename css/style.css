@@ -379,7 +379,7 @@ div.card-background {
     
 .first-letter {
     font-size:10.75em;
-    font-family:PassionOne-Regular, Passion One;
+    font-family: 'Passion One', sans-serif;
 }
     
 .second-letter {
@@ -390,13 +390,14 @@ div.card-background {
 .subtext {
     fill: #212121;
     font-size:1.75em;
-    font-family:Merriweather-Light, Merriweather;
+    font-family: 'Merriweather', serif;
 } 
 
+/*
 .def-highlight {
     color: red;
 }
-
+*/
 
 
 
