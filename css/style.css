@@ -338,6 +338,7 @@ div.card-background {
     fill: #636972;
 }
 
+/*
 .magnesium-color h2, .magnesium-color .button:hover  {
     background-color: #42CD85;
 }
@@ -346,6 +347,17 @@ div.card-background {
 }
 .magnesium-color {
     fill: #42CD85;
+}
+*/
+
+.magnesium-color h2, .magnesium-color .button:hover  {
+    background-color: #59431f;
+}
+.magnesium-color h3 {
+    color: #59431f;
+}
+.magnesium-color {
+    fill: #59431f;
 }
 
 
@@ -363,7 +375,7 @@ div.card-background {
     padding: 7em 0em 6em 0em;
 }
 
-.potassium-color .image-header svg {
+.wide svg {
     width: 36%;
 }
 
@@ -542,7 +554,7 @@ div.card-background {
 }
 
 .magnesium .slide-background, li.magnesium:hover, body.magnesium-color {
-    background-color: #DDFBCE;
+    background-color: #c4af95;
 }
 
 
