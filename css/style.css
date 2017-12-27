@@ -577,6 +577,20 @@ footer a {
     width: 7em;
 }
 
+footer p {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90%;
+    display: block;
+    margin: 0.35em auto 0em auto;
+    text-align: center;
+}
+
+footer p a {
+    display: inline;
+    width: auto;
+    text-decoration: underline;
+}
+
 
 
 
