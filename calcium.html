@@ -17,17 +17,18 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">What Makes an Element?</a></li>                
-                <li class="dropdown"><a href="menu.html">Elements</a>
-                    <ul class="dropdown-content">
-                        <a href="iron.html"><li class="iron">Iron</li></a>
-                        <a href="calcium.html"><li class="calcium">Calcium</li></a>
-                        <a href="potassium.html"><li class="potassium">Potassium</li></a>
-                        <a href="sodium.html"><li class="sodium">Sodium</li></a>
-                        <a href="magnesium.html"><li class="magnesium">Magnesium</li></a>                        
-                    </ul>
-                </li>
+                <li class="mobile-nav"><a>Menu</a></li>
+                    <li class="nav-content"><a href="index.html">Home</a></li>
+                    <li class="nav-content"><a href="#">What Makes an Element?</a></li>                
+                    <li class="nav-content dropdown"><a href="menu.html">Elements</a>
+                        <ul class="dropdown-content">
+                            <a href="iron.html"><li class="iron">Iron</li></a>
+                            <a href="calcium.html"><li class="calcium">Calcium</li></a>
+                            <a href="potassium.html"><li class="potassium">Potassium</li></a>
+                            <a href="sodium.html"><li class="sodium">Sodium</li></a>
+                            <a href="magnesium.html"><li class="magnesium">Magnesium</li></a>                        
+                        </ul>
+                    </li>
             </ul>
         </nav>
     </header>
@@ -108,7 +109,7 @@
                 </svg>
            </div>
 
-            <div class="grid-item item-1">
+            <div class="grid-item">
                 <h3>Ingredients</h3>        
                 <ul>
                     <li><span>Element:</span> Calcium</li>
@@ -122,7 +123,7 @@
                 </ul>
             </div>
 
-            <div class="grid-item item-2">                    
+            <div class="grid-item">                    
                 <h3>Specials</h3>
                 <ul>
                     <li>One part of the main component of bone, calcium is essential to all living beings.</li>
@@ -151,5 +152,8 @@
             </a>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>     
+        <script type="text/javascript" src="main.js"></script> 
 </body>
 </html>
