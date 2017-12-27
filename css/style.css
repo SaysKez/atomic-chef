@@ -606,6 +606,11 @@ footer p {
 footer p a {
     display: inline;
     text-decoration: underline;
+    transition: all 0.2s;
+}
+
+footer p a:hover {
+    color: #fff;
 }
 
 
