@@ -612,6 +612,16 @@ footer p a {
 
 
 @media (max-width: 45em) {  
+    /* TYPE */
+    h1 {
+        font-size:  3.375em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+
     /* NAV */
     .nav-content {
         display: none;
@@ -626,9 +636,23 @@ footer p a {
     }
     
     /* MENU */
+    .menu h1 {
+        width: 60%;
+        margin-top: 2em;
+    }
+
+    .menu-item a {
+        padding: 0.5em 1em;
+    }
+
     .menu-grid {
         width: 90%;
-        padding: 2.25em 5%;    
+        padding: 2.25em 5%;  
+        margin-top: -2.5em;
+    }
+
+    .menu-icon {
+        width: 3em;
     }
 
     .line {
