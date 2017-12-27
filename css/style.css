@@ -88,6 +88,7 @@ li span {
 .intro {
     text-align: center;
     font-style: italic;
+    line-height: 1.75em;
 }
 
 
@@ -276,7 +277,7 @@ div.card-background {
 
 .grid {
     display: grid;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 1fr 1fr; 
     width: 70%;
     max-width: 850px;
     margin: auto;
@@ -338,6 +339,7 @@ div.card-background {
     fill: #636972;
 }
 
+/*
 .magnesium-color h2, .magnesium-color .button:hover  {
     background-color: #42CD85;
 }
@@ -346,6 +348,17 @@ div.card-background {
 }
 .magnesium-color {
     fill: #42CD85;
+}
+*/
+
+.magnesium-color h2, .magnesium-color .button:hover  {
+    background-color: #59431f;
+}
+.magnesium-color h3 {
+    color: #59431f;
+}
+.magnesium-color {
+    fill: #59431f;
 }
 
 
@@ -363,7 +376,7 @@ div.card-background {
     padding: 7em 0em 6em 0em;
 }
 
-.potassium-color .image-header svg {
+.wide svg {
     width: 36%;
 }
 
@@ -441,7 +454,7 @@ div.card-background {
 
 .menu-item a {
     display: grid;
-    grid-template-columns: 10% 20% 60% 1fr;
+    grid-template-columns: 1fr 2fr 6fr 1fr;
     margin: auto;
     align-items: center; 
     position: relative; 
@@ -542,7 +555,7 @@ div.card-background {
 }
 
 .magnesium .slide-background, li.magnesium:hover, body.magnesium-color {
-    background-color: #DDFBCE;
+    background-color: #c4af95;
 }
 
 
@@ -564,6 +577,20 @@ footer a {
     width: 7em;
 }
 
+footer p {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 90%;
+    display: block;
+    margin: 0.35em auto 0em auto;
+    text-align: center;
+}
+
+footer p a {
+    display: inline;
+    width: auto;
+    text-decoration: underline;
+}
+
 
 
 
@@ -572,16 +599,29 @@ footer a {
 @media (max-width: 60em) {
 
     /* MENU */
+    .menu-grid {
+        width: 80%;
+    }
+
+    .menu-item a {
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+    }
+}
+
+
+@media (max-width: 45em) {  
+    
+    /* MENU */
+    .menu-grid {
+        width: 90%;
+        padding: 2.25em 5%;    
+    }
+
     .line {
         display:none;
     }
 
-    .menu-item a {
-        grid-template-columns: 1fr 40% 1fr 1fr;
-    }
-}
 
-@media (max-width: 40em) {    
     /* ELEMENTS */
     .item-1, .item-2 {
         grid-column: 1/span 2;        
