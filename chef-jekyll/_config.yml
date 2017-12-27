@@ -1,0 +1,22 @@
+# Site settings
+title: Student
+email: hiya@email.com
+url: http://127.0.0.1:4000/
+description: "I am a student"
+baseurl:
+
+# Footer settings
+footer: Student | Copyright 2007
+
+# Social network usernames
+social:
+    -   title: Instagram
+        url: https://#
+    -   title: Github
+        url: https://#
+    -   title: Twitter
+        url: https://#
+
+# Build settings
+markdown: kramdown
+permalink: pretty
