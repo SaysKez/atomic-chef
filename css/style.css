@@ -636,6 +636,24 @@ footer p a {
         font-size: 1.5em;
     }
 
+    /* LANDING */
+    .full-screen {
+        overflow: hidden;
+    }
+
+    /*
+    .image-background {
+        width: 150%;
+        left: -25%;
+        top: -10%;
+    } */
+
+    .image-background {
+        width:150%;
+        height: 150%;
+        left:-25%;
+        top: -35%;
+    }
 
     /* NAV */
     .nav-content {
