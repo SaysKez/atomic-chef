@@ -485,6 +485,10 @@ div.card-background {
     padding: 0.5em;
 }
 
+.iron .menu-icon {
+    width: 3em;
+}
+
 .menu-title {
     grid-column: 2;
     margin-left: 0.75em;
