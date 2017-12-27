@@ -136,6 +136,9 @@ li span {
 
 
 /* NAV */
+.mobile-nav {
+    display: none;
+}
 
 nav {
     width: 100%;
@@ -587,7 +590,6 @@ footer p {
 
 footer p a {
     display: inline;
-    width: auto;
     text-decoration: underline;
 }
 
@@ -610,6 +612,14 @@ footer p a {
 
 
 @media (max-width: 45em) {  
+    /* NAV */
+    #nav-content {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
     
     /* MENU */
     .menu-grid {
@@ -619,6 +629,10 @@ footer p a {
 
     .line {
         display:none;
+    }
+
+    .menu-symbol {
+        font-weight: 100;
     }
 
 
