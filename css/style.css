@@ -277,7 +277,7 @@ div.card-background {
 
 .grid {
     display: grid;
-    grid-template-columns: 50% 50%; 
+    grid-template-columns: 1fr 1fr; 
     width: 70%;
     max-width: 850px;
     margin: auto;
