@@ -136,6 +136,9 @@ li span {
 
 
 /* NAV */
+.mobile-nav {
+    display: none;
+}
 
 nav {
     width: 100%;
@@ -587,7 +590,6 @@ footer p {
 
 footer p a {
     display: inline;
-    width: auto;
     text-decoration: underline;
 }
 
@@ -610,15 +612,55 @@ footer p a {
 
 
 @media (max-width: 45em) {  
+    /* TYPE */
+    h1 {
+        font-size:  3.375em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+
+    /* NAV */
+    .nav-content {
+        display: none;
+        list-style: none;
+        font-family: 'Merriweather', serif;
+        font-size: 80%;
+    }
+
+    .mobile-nav {
+        display: block;
+        font-size: 110%;
+    }
     
     /* MENU */
+    .menu h1 {
+        width: 60%;
+        margin-top: 2em;
+    }
+
+    .menu-item a {
+        padding: 0.5em 1em;
+    }
+
     .menu-grid {
         width: 90%;
-        padding: 2.25em 5%;    
+        padding: 2.25em 5%;  
+        margin-top: -2.5em;
+    }
+
+    .menu-icon {
+        width: 3em;
     }
 
     .line {
         display:none;
+    }
+
+    .menu-symbol {
+        font-weight: 100;
     }
 
 

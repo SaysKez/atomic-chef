@@ -39,6 +39,10 @@ $(document).ready(function() {
 
 });
 
+$( ".mobile-nav" ).click(function() {
+    $( ".nav-content" ).toggle();
+  });
+
 
     //LANDING PAGE ANIMATION
     var potLid = new TimelineMax({repeat:2, yoyo:true, paused:true});
