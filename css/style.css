@@ -608,6 +608,7 @@ footer p a {
     .menu-item a {
         grid-template-columns: 1fr 2fr 2fr 1fr;
     }
+    
 }
 
 
@@ -665,7 +666,7 @@ footer p a {
 
 
     /* ELEMENTS */
-    .item-1, .item-2 {
+    .grid-item {
         grid-column: 1/span 2;        
     }
 }
