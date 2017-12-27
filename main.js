@@ -83,6 +83,20 @@ $( ".mobile-nav" ).click(function() {
     })
 
 
+    //FOOTER HOVER
+    var footerHover = new TimelineMax({paused:true});
+    footerHover.to('.footer-hat', 0.1, {scale:0.9, transformOrigin:"50% 100%"}, 0)
+    .to('.footer-hat', 0.1, {scale:1, transformOrigin:"50% 100%"});
+    
+    footerHover.timeScale(1.25);
+
+    $(".footer-logo").hover(function(){
+        footerHover.play();
+      },function(){
+        footerHover.reverse();
+    })
+
+
 
 
     /*

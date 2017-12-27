@@ -198,6 +198,19 @@ ul.dropdown-content:first-child {
     display: block;
 }
 
+nav img {
+    width: 1.5em;
+    padding-right: 0.25em;
+    margin-bottom: -0.35em;
+    margin-left: -1.75em;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.menu li:hover img {
+    opacity: 1;
+}
+
 
 
 /* LANDING PAGE */
@@ -472,6 +485,10 @@ div.card-background {
     padding: 0.5em;
 }
 
+.iron .menu-icon {
+    width: 3em;
+}
+
 .menu-title {
     grid-column: 2;
     margin-left: 0.75em;
@@ -593,6 +610,11 @@ footer p {
 footer p a {
     display: inline;
     text-decoration: underline;
+    transition: all 0.2s;
+}
+
+footer p a:hover {
+    color: #fff;
 }
 
 
