@@ -613,12 +613,16 @@ footer p a {
 
 @media (max-width: 45em) {  
     /* NAV */
-    #nav-content {
+    .nav-content {
         display: none;
+        list-style: none;
+        font-family: 'Merriweather', serif;
+        font-size: 80%;
     }
 
     .mobile-nav {
         display: block;
+        font-size: 110%;
     }
     
     /* MENU */
