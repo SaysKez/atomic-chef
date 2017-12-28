@@ -1,8 +1,8 @@
 # Site settings
-title: Student
+title: Atomic Chef
 email: hiya@email.com
 url: http://127.0.0.1:4000/
-description: "I am a student"
+description: "Cooking up elemental knowledge with ingredients from the periodic table."
 baseurl:
 
 # Footer settings
