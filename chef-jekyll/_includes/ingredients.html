@@ -1,13 +1,11 @@
 <div class="grid-item">
     <h3>Ingredients</h3>        
     <ul>
-    {% for ingredients in page.ingredients %}
-        <li><span>Element:</span> {{ ingredients }}</li>
-        <li><span>What:</span> {{ ingredients }}</li>
-        <li><span>Chemical Symbol:</span> {{ ingredients }}</li>
-        <li><span>Atomic Number:</span> {{ ingredients }}</li>
-        <li><span>Atomic Mass:</span> {{ ingredients }}</li>
-        <li><span>Category:</span> {{ ingredients }}</li>                    
-    {% endfor %}
+        <li><span>Element:</span> {{ page.element }}</li>
+        <li><span>What:</span> {{ page.what }}</li>
+        <li><span>Chemical Symbol:</span> {{ page.symbol }}</li>
+        <li><span>Atomic Number:</span> {{ page.number }}</li>
+        <li><span>Atomic Mass:</span> {{ page.mass }}</li>
+        <li><span>Category:</span> {{ page.category }}</li>                    
     </ul>
 </div>
