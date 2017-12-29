@@ -207,7 +207,7 @@ nav img {
     transition: all 0.2s;
 }
 
-nav li:hover img {
+.menu li:hover img {
     opacity: 1;
 }
 

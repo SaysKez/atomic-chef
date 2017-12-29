@@ -1,12 +1,12 @@
 # Site settings
 title: Atomic Chef
-email: hiya@email.com
+email: 
 url: http://127.0.0.1:4000/
 description: "Cooking up elemental knowledge with ingredients from the periodic table."
 baseurl:
 
 # Footer settings
-footer: Student | Copyright 2007
+footer: 
 
 # Social network usernames
 social:
