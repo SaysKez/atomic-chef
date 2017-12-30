@@ -122,6 +122,10 @@ li span {
     width: 12em;
 }
 
+.button-x2 {
+    font-size: 1.5em;
+}
+
 .button:hover {
     cursor: url('../images/fork.png') 10 70, pointer;    
     box-shadow: none;
@@ -273,6 +277,71 @@ nav li:hover img {
     stroke-miterlimit:10;
     stroke:#212121;
     stroke-width:2;
+}
+
+
+
+
+/* BREAKDOWN */
+.breakdown {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 1fr 5% 1fr;
+    width: 70%; 
+    max-width: 850px;
+    margin: 8em auto 4em auto;
+    grid-gap: 1em 2.25em;
+    align-items: center;
+}
+
+.breakdown-icon {
+    width: 8em;
+    grid-column: 2;
+    justify-self: center;
+}
+
+.icon-1 {
+    grid-row: 1;
+}
+
+.plus-1 {
+    grid-row: 2;
+    width: 3em;
+}
+
+.icon-2 {
+    grid-row: 3;
+}
+
+.item-1 {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: start;
+
+}
+
+.item-2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.cooking-pot {
+    width: 100%;
+    display: block;
+    margin: auto;
+    width: 80%;
+    position: relative;
+}
+
+.cooking-pot .iron-color {
+    position: absolute;
+    z-index: 3; 
+    width: 100%;
+    top: 20%;
+}
+
+.lid {
+    display: none;
 }
 
 
