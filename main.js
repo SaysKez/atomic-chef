@@ -99,21 +99,21 @@ $( ".mobile-nav" ).click(function() {
 
 
 
-    /*
-    function getTimeline(){
-        var potLid = new TimelineMax({repeat:2, yoyo:true});
-        potLid.add('start', 0)
-        potLid.fromTo('.pot-lid', 0.2, {rotation:3, transformOrigin: "50% 50%"}, {rotation:-3, transformOrigin: "50% 50%"}, 'start')
-        .to('.pot-lid', 0.2, {rotation:0, y:5, transformOrigin: "50% 50%"})
-        
-        potLid.timeScale(1);
+    //BREAKDOWN
+    /* Referencing this cycle: https://stackoverflow.com/questions/45192723/how-to-cycle-through-divs */
 
-        return potLid;
-    }
+    $(".cycle-wrapper").first().show();
+$(".cook").click(function() {
+  var start=0, step=1;
+  var currentItems = $(".cycle-wrapper:visible").hide();
+  var currentLast = (this.id==="prev" ? currentItems.first() : currentItems.last());
+  var nextItems = (this.id==="prev" ? currentLast.prevAll() : currentLast.nextAll());
+  
+  if (nextItems.length === 0) { //if the last set of divs has been reached, loop around
+    var itemsLength = $(".cycle-wrapper").length;
+    if (this.id==="prev") {start=itemsLength-step; step=itemsLength;} //determine wich way to loop around
+    nextItems = $(".cycle-wrapper").slice(start,step); //loop around
+  } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, simply select the next set
+  nextItems.show(); //show the next set
+}).click(); //initialize divs at pageload
 
-    function init(){
-        atomicExp
-           .add(getTimeline(), 'scene-intro');
-     }
-     init();
-     */

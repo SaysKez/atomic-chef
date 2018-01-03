@@ -106,6 +106,7 @@ li span {
     /*
     border: 3px solid #48CEE3;
     */
+    border: none;
     border-radius: 2em;
     display: block;
     width: 8em;
@@ -294,6 +295,13 @@ nav li:hover img {
     align-items: center;
 }
 
+.breakdown h2 {
+    text-align: left;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em;
+    width: auto;
+}
+
 .breakdown-icon {
     width: 8em;
     grid-column: 2;
@@ -326,10 +334,9 @@ nav li:hover img {
 }
 
 .cooking-pot {
-    width: 100%;
     display: block;
     margin: auto;
-    width: 80%;
+    width: 50%;
     position: relative;
 }
 
@@ -341,6 +348,11 @@ nav li:hover img {
 }
 
 .lid {
+    display: none;
+}
+
+
+.cycle-wrapper {
     display: none;
 }
 
