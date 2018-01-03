@@ -100,20 +100,70 @@ $( ".mobile-nav" ).click(function() {
 
 
     //BREAKDOWN
-    /* Referencing this cycle: https://stackoverflow.com/questions/45192723/how-to-cycle-through-divs */
+    /* Reference:
+    https://stackoverflow.com/questions/45192723/how-to-cycle-through-divs
+    https://jsfiddle.net/6karx4v0/1/ */
 
-    $(".cycle-wrapper").first().show();
-$(".cook").click(function() {
-  var start=0, step=1;
-  var currentItems = $(".cycle-wrapper:visible").hide();
-  var currentLast = (this.id==="prev" ? currentItems.first() : currentItems.last());
-  var nextItems = (this.id==="prev" ? currentLast.prevAll() : currentLast.nextAll());
-  
-  if (nextItems.length === 0) { //if the last set of divs has been reached, loop around
-    var itemsLength = $(".cycle-wrapper").length;
-    if (this.id==="prev") {start=itemsLength-step; step=itemsLength;} //determine wich way to loop around
-    nextItems = $(".cycle-wrapper").slice(start,step); //loop around
-  } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, simply select the next set
-  nextItems.show(); //show the next set
-}).click(); //initialize divs at pageload
+
+    $(document).ready(function(){
+
+            $(".cycle-wrapper").first().show();
+            $(".cook").click(function cycle() {
+              var start=0, step=1;
+              var currentItems = $(".cycle-wrapper:visible").hide();
+              var currentLast = (this.id==="prev" ? currentItems.first() : currentItems.last());
+              var nextItems = (this.id==="prev" ? currentLast.prevAll() : currentLast.nextAll());
+
+              if (nextItems.length === 0) { //if the last set of divs has been reached, loop around
+                var itemsLength = $(".cycle-wrapper").length;
+                if (this.id==="prev") {start=itemsLength-step; step=itemsLength;} //determine wich way to loop around
+                nextItems = $(".cycle-wrapper").slice(start,step); //loop around
+              } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, select the next set
+              nextItems.show(); //show the next set
+            }).click(); //initialize divs at pageload
+    });
+    
+/*
+
+$(".cycle-wrapper").first().show();
+
+            setInterval(cycle,1000);
+
+var i = 0, howManyTimes = 4;
+function cycle() {
+    $(".cook").click(function() {
+        var start=0, step=1;
+        var currentItems = $(".cycle-wrapper:visible").hide();
+        var currentLast = (this.id==="prev" ? currentItems.first() : currentItems.last());
+        var nextItems = (this.id==="prev" ? currentLast.prevAll() : currentLast.nextAll());
+        
+        if (nextItems.length === 0) { //if the last set of divs has been reached, loop around
+          var itemsLength = $(".cycle-wrapper").length;
+          if (this.id==="prev") {start=itemsLength-step; step=itemsLength;} //determine wich way to loop around
+          nextItems = $(".cycle-wrapper").slice(start,step); //loop around
+        } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, select the next set
+        nextItems.show(); //show the next set
+      }).click(); //initialize divs at pageload
+    i++;
+    if( i < howManyTimes ){
+        setTimeout( cycle, 1000 );
+    }
+}
+cycle();
+
+$(".icon-1").animate({opacity: '0'});
+*/
+
+
+
+/*
+
+var cooking = new TimelineMax({paused:true});
+cooking.to('.breakdown-icon', 1, {ease:"Back.easeIn", opacity:0},0.2);
+
+$('#next').on('click', function(event) {
+    cooking.play();
+});
+*/
+              
 
