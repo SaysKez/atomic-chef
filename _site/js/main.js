@@ -43,7 +43,7 @@ $( ".mobile-nav" ).click(function() {
     $( ".nav-content" ).toggle();
   });
 
-
+  if(window.innerWidth > 700){
     //LANDING PAGE ANIMATION
     var potLid = new TimelineMax({repeat:2, yoyo:true, paused:true});
     potLid.add('start', 0)
@@ -66,7 +66,7 @@ $( ".mobile-nav" ).click(function() {
     .add(lidBlow.play())
 
     atomicExp.timeScale(1);    
-
+}
 
     //LANDING PAGE HOVER
     var bannerHover = new TimelineMax({yoyo:true, paused:true});
