@@ -1,21 +1,8 @@
 # Site settings
 title: Atomic Chef
-email: 
 url: http://127.0.0.1:4000/
 description: "Cooking up elemental knowledge with ingredients from the periodic table."
-baseurl:
-
-# Footer settings
-footer: 
-
-# Social network usernames
-social:
-    -   title: Instagram
-        url: https://#
-    -   title: Github
-        url: https://#
-    -   title: Twitter
-        url: https://#
+baseurl: 
 
 # Build settings
 markdown: kramdown
