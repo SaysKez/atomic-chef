@@ -1,12 +1,8 @@
+/*
 $(document).ready(function() {
-    /*
-    $('.html').animate( { height: '180px' }, 1500);
-    $('.css').animate( { height: '180px' }, 1500);
-    $('.photoshop').animate( { height: '220px' }, 1500);
-    $('.illustrator').animate( { height: '100px' }, 1500);
-    $('.javascript').animate( { height: '90px' }, 1500);
-        */
-        
+  
+    // Highlight on hover for periodic cells
+       
         $( '.chemical-symbol' ).hover(
             function() {
                $('.symbol-def').css("background","#CD424A");
@@ -36,14 +32,14 @@ $(document).ready(function() {
            $('.atomic-number-def').css("color", "#212121");
         }
     );
-
 });
+*/
 
 $( ".mobile-nav" ).click(function() {
     $( ".nav-content" ).toggle();
   });
 
-
+  if(window.innerWidth > 699){
     //LANDING PAGE ANIMATION
     var potLid = new TimelineMax({repeat:2, yoyo:true, paused:true});
     potLid.add('start', 0)
@@ -66,7 +62,7 @@ $( ".mobile-nav" ).click(function() {
     .add(lidBlow.play())
 
     atomicExp.timeScale(1);    
-
+}
 
     //LANDING PAGE HOVER
     var bannerHover = new TimelineMax({yoyo:true, paused:true});

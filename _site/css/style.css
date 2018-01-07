@@ -128,12 +128,6 @@ li span {
     transform: translate(0px, 4px);
 }
 
-.button:active {
-}
-
-
-
-
 
 /* NAV */
 .mobile-nav {
@@ -357,18 +351,6 @@ div.card-background {
     fill: #636972;
 }
 
-/*
-.magnesium-color h2, .magnesium-color .button:hover  {
-    background-color: #42CD85;
-}
-.magnesium-color h3 {
-    color: #42CD85;
-}
-.magnesium-color {
-    fill: #42CD85;
-}
-*/
-
 .magnesium-color h2, .magnesium-color .button:hover  {
     background-color: #59431f;
 }
@@ -424,18 +406,7 @@ div.card-background {
     font-family: 'Merriweather', serif;
 } 
 
-/*
-.def-highlight {
-    color: red;
-}
-*/
-
-
-
-
-
 /* MENU */
-
 .menu {
     background-color: #ffc558;
 }
@@ -517,7 +488,6 @@ div.card-background {
 }
 
 /* MENU HOVER */
-
 .menu-item a:hover {
     cursor: url('../images/fork.png') 10 70, pointer;    
 }
@@ -621,7 +591,6 @@ footer p a:hover {
 
 
 /* RESPONSIVE */
-
 @media (max-width: 60em) {
     h2 {
         width: 60%;
@@ -675,6 +644,18 @@ footer p a:hover {
         height: 150%;
         left:-25%;
         top: -35%;
+    }
+
+    .pot-lid {
+        display: none;
+    }
+
+    .logo-banner {
+        display: block;
+    }
+
+    .logo-cloud {
+        display: block;
     }
 
     /* NAV */
@@ -745,5 +726,4 @@ footer p a:hover {
         width: 120%;
         margin: 1em auto 1em -10%;
     }
-
 }
