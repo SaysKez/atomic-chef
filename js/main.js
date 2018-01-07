@@ -39,7 +39,7 @@ $( ".mobile-nav" ).click(function() {
     $( ".nav-content" ).toggle();
   });
 
-  if(window.innerWidth > 700){
+  if(window.innerWidth > 699){
     //LANDING PAGE ANIMATION
     var potLid = new TimelineMax({repeat:2, yoyo:true, paused:true});
     potLid.add('start', 0)
