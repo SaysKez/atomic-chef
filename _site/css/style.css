@@ -131,6 +131,32 @@ li span {
     transform: translate(0px, 4px);
 }
 
+/*
+.button-array {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch {
+    width: 2em;
+    border-radius: 100%;
+}
+
+.button.switch {
+    border: 3px solid #212121;
+    background-color: transparent;
+    color: #212121;
+    -webkit-box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 0px 6px 12px -8px rgba(0,0,0,0.35);
+    box-shadow: inset 0px 6px 12px -8px rgba(0, 0, 0, 0.30),    
+}
+
+.button.switch:hover {
+    color: #fff;
+}
+*/
+
 
 /* NAV */
 .mobile-nav {
