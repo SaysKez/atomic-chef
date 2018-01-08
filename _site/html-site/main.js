@@ -118,7 +118,7 @@ $( ".mobile-nav" ).click(function() {
                 var itemsLength = $(".cycle-wrapper").length;
                 if (this.id==="prev") {start=itemsLength-step; step=itemsLength;} //determine wich way to loop around
                 nextItems = $(".cycle-wrapper").slice(start,step); //loop around
-              } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, select the next set
+              } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, simply select the next set
               nextItems.show(); //show the next set
             }).click(); //initialize divs at pageload
     });
