@@ -1,5 +1,4 @@
 /* 1. CSS RESET */
-
 * {
     padding: 0;
     margin: 0;
@@ -9,8 +8,7 @@
 
 
 
-/* 2. Typography */
-
+/* 2. TYPOGRAPHY */
 a {
     text-decoration: none;
     color: #212121;  
@@ -133,12 +131,6 @@ li span {
     transform: translate(0px, 4px);
 }
 
-.button:active {
-}
-
-
-
-
 
 /* NAV */
 .mobile-nav {
@@ -219,7 +211,6 @@ nav li:hover img {
 
 
 /* LANDING PAGE */
-
 .full-screen {
     position: relative;
     background-color: #ffc558;
@@ -279,8 +270,6 @@ nav li:hover img {
     stroke:#212121;
     stroke-width:2;
 }
-
-
 
 
 /* BREAKDOWN */
@@ -371,10 +360,7 @@ nav li:hover img {
 }
 
 
-
-
 /* 3. GRID */
-
 div.card-background {
     width: 100%;
     border-radius: 2em;
@@ -395,23 +381,12 @@ div.card-background {
     grid-gap: 1em 2.25em;
 }
 
-/*
-.item-1 {
-    grid-column: 1;
-}
-
-.item-2 {
-    grid-column: 2;
-}
-*/
-
 .item-span {
     grid-column: 1/span 2;
 }
 
 
 /* COLOURS */
-
 .iron-color h2, .iron-color .button:hover {
     background-color: #CD424A;
 }
@@ -526,11 +501,7 @@ div.card-background {
 */
 
 
-
-
-
 /* MENU */
-
 .menu {
     background-color: #ffc558;
 }
@@ -612,7 +583,6 @@ div.card-background {
 }
 
 /* MENU HOVER */
-
 .menu-item a:hover {
     cursor: url('../images/fork.png') 10 70, pointer;    
 }
