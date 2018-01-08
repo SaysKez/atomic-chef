@@ -1,5 +1,4 @@
 /* 1. CSS RESET */
-
 * {
     padding: 0;
     margin: 0;
@@ -9,8 +8,7 @@
 
 
 
-/* 2. Typography */
-
+/* 2. TYPOGRAPHY */
 a {
     text-decoration: none;
     color: #212121;  
@@ -133,12 +131,6 @@ li span {
     transform: translate(0px, 4px);
 }
 
-.button:active {
-}
-
-
-
-
 
 /* NAV */
 .mobile-nav {
@@ -219,7 +211,6 @@ nav li:hover img {
 
 
 /* LANDING PAGE */
-
 .full-screen {
     position: relative;
     background-color: #ffc558;
@@ -281,17 +272,15 @@ nav li:hover img {
 }
 
 
-
-
 /* BREAKDOWN */
 .breakdown {
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
-    grid-template-rows: 1fr 5% 1fr;
+    grid-template-rows: 1fr 5% 1fr 5% 1fr;
     width: 70%; 
     max-width: 850px;
     margin: 8em auto 4em auto;
-    grid-gap: 1em 2.25em;
+    grid-gap: 1.75em 2.25em;
     align-items: center;
 }
 
@@ -317,8 +306,17 @@ nav li:hover img {
     width: 3em;
 }
 
+.equal-1 {
+    grid-row: 4;
+    width: 3em;
+}
+
 .icon-2 {
     grid-row: 3;
+}
+
+.icon-3 {
+    grid-row: 5;
 }
 
 .item-1 {
@@ -331,6 +329,11 @@ nav li:hover img {
 .item-2 {
     grid-column: 1;
     grid-row: 3;
+}
+
+.item-3 {
+    grid-column: 3;
+    grid-row: 5;
 }
 
 .cooking-pot {
@@ -357,10 +360,7 @@ nav li:hover img {
 }
 
 
-
-
 /* 3. GRID */
-
 div.card-background {
     width: 100%;
     border-radius: 2em;
@@ -381,23 +381,12 @@ div.card-background {
     grid-gap: 1em 2.25em;
 }
 
-/*
-.item-1 {
-    grid-column: 1;
-}
-
-.item-2 {
-    grid-column: 2;
-}
-*/
-
 .item-span {
     grid-column: 1/span 2;
 }
 
 
 /* COLOURS */
-
 .iron-color h2, .iron-color .button:hover {
     background-color: #CD424A;
 }
@@ -512,11 +501,7 @@ div.card-background {
 */
 
 
-
-
-
 /* MENU */
-
 .menu {
     background-color: #ffc558;
 }
@@ -598,7 +583,6 @@ div.card-background {
 }
 
 /* MENU HOVER */
-
 .menu-item a:hover {
     cursor: url('../images/fork.png') 10 70, pointer;    
 }
@@ -721,6 +705,29 @@ footer p a:hover {
     .cell {
         width: 85%;
     }
+
+    /* BREAKDOWN */
+    .breakdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .breakdown h2, .breakdown p {
+        text-align: center;
+    }
+
+    .breakdown svg {
+        margin: 0.5em;
+    }
+
+    .plus-1, .equal-1 {
+        margin: 1.5em;
+    }
+
+    .breakdown div {
+        margin: 0.5em auto 1.5em auto;
+    }
+
     
 }
 
@@ -825,6 +832,23 @@ footer p a:hover {
     .cell {
         width: 120%;
         margin: 1em auto 1em -10%;
+    }
+
+    /* BREAKDOWM */
+    .breakdown {
+        margin-bottom: 1em;
+    }
+
+    .pot-base {
+        display: none;
+    }
+
+    .cooking-pot {
+        width: auto;
+    }
+
+    .cooking-pot .iron-color {
+        position: unset;
     }
 
 }
