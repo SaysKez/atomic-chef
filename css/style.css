@@ -765,7 +765,31 @@ footer p a:hover {
         top: -35%;
     }
 
+    .pot-lid {
+        display: none;
+    }
+
+    .logo-banner {
+        display: block;
+    }
+
+    .logo-cloud {
+        display: block;
+}
+
     /* NAV */
+    nav li ul {
+        font-size: 95%;
+        width: 100%;
+        margin-top: 0.5em;
+    }
+
+    ul.dropdown-content li {
+        text-align: center;
+        margin: auto;
+    }
+
+
     .nav-content {
         display: none;
         list-style: none;
