@@ -100,6 +100,7 @@ $( ".mobile-nav" ).click(function() {
     https://stackoverflow.com/questions/45192723/how-to-cycle-through-divs
     https://jsfiddle.net/6karx4v0/1/ */
 
+    //For some reason shows empty final set. Not sure why.
 
     $(document).ready(function(){
 

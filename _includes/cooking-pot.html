@@ -9,7 +9,9 @@
     </svg>
 
 <div class="iron-color">
-    <a href="{{ page.next }}" type="button" class="button button-x2" id="next">Cook</a>
+    <a href="{{ page.next }}" type="button" class="button button-x2" id="next">{{ page.button }}</a>
+{% if page.first == false %}
     <a href="{{ page.prev }}" type="button" class="button" id="prev">Back Up</a>
+{% endif %}
 </div>    
 </div>
