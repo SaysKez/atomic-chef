@@ -291,7 +291,7 @@ nav li:hover img {
     width: 70%; 
     max-width: 850px;
     margin: 8em auto 4em auto;
-    grid-gap: 1em 2.25em;
+    grid-gap: 1.75em 2.25em;
     align-items: center;
 }
 
@@ -735,6 +735,29 @@ footer p a:hover {
     .cell {
         width: 85%;
     }
+
+    /* BREAKDOWN */
+    .breakdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .breakdown h2, .breakdown p {
+        text-align: center;
+    }
+
+    .breakdown svg {
+        margin: 0.5em;
+    }
+
+    .plus-1, .equal-1 {
+        margin: 1.5em;
+    }
+
+    .breakdown div {
+        margin: 0.5em auto 1.5em auto;
+    }
+
     
 }
 
@@ -839,6 +862,23 @@ footer p a:hover {
     .cell {
         width: 120%;
         margin: 1em auto 1em -10%;
+    }
+
+    /* BREAKDOWM */
+    .breakdown {
+        margin-bottom: 1em;
+    }
+
+    .pot-base {
+        display: none;
+    }
+
+    .cooking-pot {
+        width: auto;
+    }
+
+    .cooking-pot .iron-color {
+        position: unset;
     }
 
 }
